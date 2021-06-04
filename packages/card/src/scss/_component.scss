@@ -129,10 +129,11 @@
       flex-direction: row;
       min-height: auto;
       border-width: 0;
-      padding-bottom: core.$space-s;
+      padding-bottom: core.$space;
 
       & .uq-card__link {
         box-shadow: none;
+        border-bottom: 1px solid core.$uq-neutral-light60;
       }
 
       & .uq-card__image-wrapper {
