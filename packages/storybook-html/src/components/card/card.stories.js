@@ -21,7 +21,27 @@ export const DefaultCard = () => {
   return `
   <div class="uq-grid uq-grid--full-width">
     <div class="uq-grid__col uq-grid__col--6 uq-grid__col--md-4 uq-grid__col--xl-3">
-      <div class="uq-card">
+      <div class="uq-card uq-card--collapse-small">
+        <a class="uq-card__link" href="#">Card title</a>
+        <div class="uq-card__image-wrapper">
+          <div class="uq-card__image">
+            <img src="/images/card/card-example-st-lucia-campus.jpg" alt="Card image description">
+          </div>
+        </div>
+        <div class="uq-card__content-wrapper">
+          <div class="uq-card__content">
+            <div class="uq-card__header">
+              <h3 class="uq-card__title">Card title</h3>
+            </div>
+            <div class="uq-card__body">
+                <p>Card summary text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uq-grid__col uq-grid__col--6 uq-grid__col--md-4 uq-grid__col--xl-3">
+      <div class="uq-card uq-card--collapse-small">
         <a class="uq-card__link" href="#">Card title</a>
         <div class="uq-card__image-wrapper">
           <div class="uq-card__image">

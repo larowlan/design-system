@@ -123,6 +123,35 @@
   &--shaded {
     background-color: $card-shaded-bg;
   }
+
+  &--collapse-small {
+    @media #{core.$screen-md-down} {
+      flex-direction: row;
+      min-height: auto;
+      border-width: 0;
+      padding-bottom: core.$space-s;
+
+      & .uq-card__link {
+        box-shadow: none;
+      }
+
+      & .uq-card__image-wrapper {
+        height: 100%;
+        flex: 0 0 30%;
+      }
+
+      & .uq-card__image {
+        min-height: 100%;
+        padding-bottom: 0;
+
+        & img {
+          width: 100%;
+          object-fit: cover;
+
+        }
+      }
+    }
+  }
 }
 
 /* Additional style rules */
