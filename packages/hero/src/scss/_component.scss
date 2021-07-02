@@ -23,25 +23,37 @@
     }
   }
 
-  &__text {
+ 
     
-    & h1 {
-      color: inherit;
-      margin-top: 0;
-      margin-bottom: core.$space-s;
+  &__title {
+    font-family: core.$montserrat;
+    font-size: core.$font-size-xxxl;
+    line-height: core.$line-height-h;
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: core.$space-s;
 
-      @media #{core.$screen-md-up} {
-        font-size: 3rem;
-      }
-    }
-  
-    & *:last-child {
-      margin-bottom: 0;
+    @media #{core.$screen-md-up} {
+      font-size: 3rem;
     }
   }
 
+  & *:last-child {
+    margin-bottom: 0;
+  }
+  
+
   &__subtext {
-    margin-bottom: core.$space-m;
+    font-family: core.$montserrat;
+    font-size: core.$font-size;
+    margin-top: core.$space-s;
+    margin-bottom: core.$space-s;
+  }
+
+  &__action {
+    a {
+      margin-top: core.$space-m;
+    }
   }
 
   &__image {
@@ -122,6 +134,17 @@
       }
     }
    
+  }
+
+  &--big {
+
+    & .uq-hero__content {
+
+      @media #{core.$screen-md-up} {
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+      }
+    }
   }
 
 }
