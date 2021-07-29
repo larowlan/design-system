@@ -162,6 +162,20 @@
     &::after { clear: both; }
   }
 
+  &__container--flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    & a {
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   &__header,
   &__content,
   &__footer {

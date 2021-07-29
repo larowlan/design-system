@@ -69,17 +69,17 @@
 
     &.uq-button--outline {
       background-color: transparent;
-      border-color: $button-secondary-bg-color;
+      border-color: core.$uq-white;
       color: $button-secondary-color;
 
       &:hover, &:focus {
-        background-color: $button-secondary-bg-hover-color;
-        border-color: $button-secondary-bg-hover-color;
+        background-color: core.$uq-white;
+        border-color: core.$uq-white;
         color: $button-secondary-color;
       }
 
       &.uq-button--light {
-        color: $button-secondary-bg-color;
+        color: core.$uq-white;
 
         &:hover, &:focus {
           color: $button-secondary-color;
