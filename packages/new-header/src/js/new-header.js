@@ -46,7 +46,21 @@ class newHeader {
         this.searchLabel.innerHTML = "Search";
       }
     });
+
+    // megamenu
+
+    document.querySelectorAll('.new-header__nav-primary-item').forEach(megaMenuToggle => {
+      megaMenuToggle.addEventListener('mouseover', () => {
+        megaMenuToggle.classList.add('new-header__nav-primary-item--is-open');
+
+      }),
+      megaMenuToggle.addEventListener('mouseout', () => {
+        megaMenuToggle.classList.remove('new-header__nav-primary-item--is-open');
+      })
+    })
+    
   }
+
 
 };
 
