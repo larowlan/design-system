@@ -14,5 +14,8 @@
     "rollup": "^2.70.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "scripts": {
+    "build": "lerna bootstrap"
   }
 }
